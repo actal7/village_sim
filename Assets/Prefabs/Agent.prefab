@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: a3eb572e94c72406487f4bf2d4328968, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,6 +123,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f4e90ce45364505ae7e0d520f987c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  energyDecayRate: 0.5
+  hungerDecayRate: 0.8
+  stressGainRate: 0.2
+  stressRecoveryRate: 0.4
+  TEMP_isIdle: 0
   energy: 100
   hunger: 100
   stress: 0
