@@ -26,10 +26,27 @@ public class AgentMovement : MonoBehaviour
             {
                 if (aiPath != null)
                 {
-                    aiPath.destination = hit.point;
+                    MoveTo(hit.point);
                     Debug.Log("New destination set to: " + hit.point);
                 }
             }
+        }
+    }
+
+    public void StopMoving()
+    {
+        if (aiPath != null)
+        {
+            aiPath.isStopped = true;
+        }
+    }
+
+    public void MoveTo(Vector3 destination)
+    {
+        if (aiPath != null)
+        {
+            aiPath.isStopped = false;
+            aiPath.destination = destination;
         }
     }
 }
